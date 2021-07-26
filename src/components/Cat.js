@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Cat = ({ items }) => (
-  <div>
-    <div className="item__data">
+  <div className="Cat">
+    <div className="Cat__data">
 
       <figure>
         { items.image && (<img src={items.image.url} alt="img" />)}
