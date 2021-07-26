@@ -9,6 +9,29 @@ const CatLists = () => {
 
   const items = useSelector((state) => state.items.items);
 
+  const heatMap = () => (
+    <>
+      <div className="photo__details-heatmap">
+        <div className="image" />
+        <div className="figcaption" />
+        <div className="figcaption1" />
+      </div>
+
+      <div className="photo__details-heatmap">
+        <div className="image" />
+        <div className="figcaption" />
+        <div className="figcaption1" />
+      </div>
+
+      <div className="photo__details-heatmap">
+        <div className="image" />
+        <div className="figcaption" />
+        <div className="figcaption1" />
+      </div>
+    </>
+
+  );
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -24,7 +47,7 @@ const CatLists = () => {
             ? catList.map((cat) => (
               <Cat key={cat.id} items={cat} />
             ))
-            : <h1>Loading</h1>
+            : (heatMap())
         }
 
     </div>
