@@ -1,8 +1,9 @@
 import React from 'react';
+import CatLists from '../containers/CatLists';
 
 const App = () => (
   <div className="App">
-    <h1>Welcome to CatLifeStyle</h1>
+    <CatLists />
   </div>
 );
 
