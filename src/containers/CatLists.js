@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import fetchData from '../api/fetchData';
 import Cat from '../components/Cat';
+import '../assets/Css/Cat.css';
 
 const CatLists = () => {
   const [catList, setCatList] = useState([]);
@@ -17,7 +18,7 @@ const CatLists = () => {
   }, [items]);
 
   return (
-    <div>
+    <div className="CatList">
       {
           catList && catList.length
             ? catList.map((cat) => (

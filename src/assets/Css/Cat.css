@@ -1,0 +1,16 @@
+.App {
+  padding: 20px;
+}
+
+.Cat__data figure img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.CatList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+  margin: 14px 0;
+}
