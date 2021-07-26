@@ -11,18 +11,16 @@ const Cat = ({ items }) => (
         <figcaption className="items__data-title">{items.name}</figcaption>
       </figure>
       <p>
-        {' '}
-        Short Legs:
-        {' '}
+        <span className="font-weight-bold">
+          Short Legs: &nbsp;
+        </span>
         {items.short_legs}
-        {' '}
       </p>
       <p>
-        {' '}
-        affect Level:
-        {' '}
+        <span className="font-weight-bold">
+          Affection Level: &nbsp;
+        </span>
         {items.affection_level}
-        {' '}
       </p>
     </div>
   </div>
